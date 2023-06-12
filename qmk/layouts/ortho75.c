@@ -1,10 +1,6 @@
 enum unicode_names {
-	HASH,
 	POUND,
 	EURO,
-	LPRN,
-	RPRN,
-	CIRC,
 	
     TH_RUNE, DH_RUNE,
     W_RUNE,
@@ -39,12 +35,8 @@ enum unicode_names {
 };
 
 const uint32_t unicode_map[] PROGMEM = {
-    [HASH] = 0x0023, // #
     [POUND] = 0x20a4, // £
     [EURO] = 0x20ac, // €
-    [LPRN] = 0x0028, // (
-    [RPRN] = 0x0029, // )
-    [CIRC] = 0x005e, // ^
     
     [TH_RUNE] = 0x16a6, [DH_RUNE] = 0x16a7, // ᚦ, ᚧ
     [W_RUNE] = 0x16b9, // ᚹ
