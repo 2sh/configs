@@ -1,7 +1,7 @@
 enum unicode_names {
-	POUND,
-	EURO,
-	
+    POUND,
+    EURO,
+    
     TH_RUNE, DH_RUNE,
     W_RUNE,
     E_RUNE, EA_RUNE,
