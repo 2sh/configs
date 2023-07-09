@@ -110,8 +110,8 @@ const key_override_t **key_overrides = (const key_override_t *[]){
     &shift_p9_pageup_override,
     &shift_p3_pagedown_override,
     
-    shift_p0_ins_override,
-    shift_pdot_del_override,
+    &shift_p0_ins_override,
+    &shift_pdot_del_override,
     
     
     &shift_f1_f13_override,
