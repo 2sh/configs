@@ -70,10 +70,6 @@ const uint32_t unicode_map[] PROGMEM = {
     [CROSS_RUNE] = 0x16ed // ᛭
 };
 
-const key_override_t shift_space_del_override = ko_make_basic(MOD_MASK_SHIFT, KC_SPACE, KC_DEL);
-const key_override_t shift_enter_backspace_override = ko_make_basic(MOD_MASK_SHIFT, KC_ENTER, KC_BACKSPACE);
-
-
 const key_override_t shift_p8_up_override = ko_make_basic(MOD_MASK_SHIFT, KC_P8, KC_UP);
 const key_override_t shift_p2_dowm_override = ko_make_basic(MOD_MASK_SHIFT, KC_P2, KC_DOWN);
 const key_override_t shift_p4_left_override = ko_make_basic(MOD_MASK_SHIFT, KC_P4, KC_LEFT);
@@ -104,10 +100,6 @@ const key_override_t shift_f11_f23_override = ko_make_basic(MOD_MASK_SHIFT, KC_F
 const key_override_t shift_f12_f24_override = ko_make_basic(MOD_MASK_SHIFT, KC_F12, KC_F24);
 
 const key_override_t **key_overrides = (const key_override_t *[]){
-    &shift_space_del_override,
-    &shift_enter_backspace_override,
-    
-    
     &shift_p8_up_override,
     &shift_p2_dowm_override,
     &shift_p4_left_override,
@@ -117,6 +109,9 @@ const key_override_t **key_overrides = (const key_override_t *[]){
     &shift_p1_end_override,
     &shift_p9_pageup_override,
     &shift_p3_pagedown_override,
+    
+    shift_p0_ins_override,
+    shift_pdot_del_override,
     
     
     &shift_f1_f13_override,
